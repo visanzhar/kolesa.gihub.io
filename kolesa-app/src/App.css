@@ -1,8 +1,6 @@
 html {
   margin: 0;
   padding: 0;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .App {
@@ -10,32 +8,12 @@ html {
   
 }
 
-.Header {
-  display: flex;
-  justify-content: end;
-}
-
-.Header a{
-  padding-left: 10px;
-}
-
-.Trending-content img {
-  width: 50px;
-  height: 50px;
-}
-
-.filter-by-brand {
-  width: 50%;
-}
-
-.filter-by-brand ul {
-  list-style: none;
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
-}
-
-a {
+a:hover {
+  color: red;
   text-decoration: none;
-  padding: 1px;
+}
+
+.photo-gallery-item:hover{
+  width: 100%;
+  height: 120px,
 }
