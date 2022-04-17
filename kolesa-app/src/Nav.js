@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "./img/logo.svg"
+import AddModal from "./AddModal";
 
 const styles = {
     nav: {
@@ -33,7 +34,7 @@ const styles = {
     }
 }
 
-const Nav = () => {
+const Nav = (props) => {
     return(
         <div className="Nav" style={styles.nav}>
             <div className="logo">
@@ -49,10 +50,7 @@ const Nav = () => {
                 <a href="#s" style={styles.a}>Колеса Гид</a>
             </div>
             <div className="add-a" >
-                <a href="#s" style={styles.a_add}>
-                    <span class="fi_add"></span>
-                    <span class="label">Подать объявление</span>
-                </a>
+                <AddModal content={props.content}/>
                 <div>
                     <label>803 354 Уже на сайте</label>
                 </div>

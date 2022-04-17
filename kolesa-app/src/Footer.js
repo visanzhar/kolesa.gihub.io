@@ -1,8 +1,18 @@
 import React from "react";
 
+let styles = {
+    footer: {
+        paddingTop: '2em',
+        display: 'flex',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        paddingBottom: '1em'
+    }
+}
+
 const Footer = () => {
     return(
-        <div className="footer">
+        <div className="footer" style={styles.footer}>
             <a href="#s">Колеса</a>
             <a href="#s">Машины</a>
             <a href="#s">Запчасти</a>
